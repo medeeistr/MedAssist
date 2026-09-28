@@ -1,0 +1,42 @@
+:root {
+  --bg-main: #F7F5F0;
+  --bg-card: #FFFFFF;
+  --bg-input: #FAF8F5;
+  
+  --text-main: #2D3732;
+  --text-heading: #1A231F;
+  --text-muted: #5C6560;
+  
+  --primary: #D97757;
+  --primary-hover: #C06042;
+  --border: #E5E0D8;
+  
+  --shadow-sm: 0 2px 8px rgba(45, 55, 50, 0.04);
+  --shadow-md: 0 8px 24px rgba(45, 55, 50, 0.06);
+
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100vh;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Reducem dimensiunea fontului pe telefoane */
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
